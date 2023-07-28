@@ -13,6 +13,7 @@ const eventHandlers = [
   new MicEventHandler(connectionManager),
   new CameraEventHandler(connectionManager),
   new LeaveCallEventHandler(connectionManager),
+  new StopPresentingScreenEventHandler(connectionManager),
   new ChatEventHandler(connectionManager),
   new ParticipantsEventHandler(connectionManager),
   new PinPresentationEventHandler(connectionManager),

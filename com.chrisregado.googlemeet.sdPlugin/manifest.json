@@ -148,6 +148,21 @@
       "UUID": "com.chrisregado.googlemeet.leavecall"
     },
     {
+      "Icon": "images/actions/stop_presenting",
+      "Name": "Stop Presenting",
+      "States": [
+        {
+          "Image": "images/keys/stop_presenting",
+          "Title": "Stop\nPresenting",
+          "TitleAlignment": "top",
+          "FontSize": "10",
+          "ShowTitle": false
+        }
+      ],
+      "Tooltip": "Stop presenting.",
+      "UUID": "com.chrisregado.googlemeet.stoppresentingscreen"
+    },
+    {
       "Icon": "images/actions/hand",
       "Name": "Toggle Hand",
       "States": [
@@ -407,20 +422,15 @@
   ],
   "SDKVersion": 2,
   "Author": "Chris Regado",
-  "CodePathMac": "dist/macos/main/main",
   "CodePathWin": "dist/windows/main/main.exe",
   "Description": "A Stream Deck plugin to manage your Google Meet calls.",
   "Name": "Google Meet",
   "Icon": "images/plugin_icon",
   "URL": "https://github.com/ChrisRegado/streamdeck-googlemeet",
-  "Version": "1.4.0",
+  "Version": "1.5.0",
   "Category": "Google Meet",
   "CategoryIcon": "images/category_icon",
   "OS": [
-    {
-      "Platform": "mac",
-      "MinimumVersion": "10.11"
-    },
     {
       "Platform": "windows",
       "MinimumVersion": "10"

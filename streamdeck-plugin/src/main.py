@@ -8,6 +8,7 @@ from event_handlers.captions_toggle_event_handler import CaptionsToggleEventHand
 from event_handlers.chat_toggle_event_handler import ChatToggleEventHandler
 from event_handlers.hand_toggle_event_handler import HandToggleEventHandler
 from event_handlers.leave_call_event_handler import LeaveCallEventHandler
+from event_handlers.stop_presenting_screen_handler import StopPresentingScreenEventHandler
 from event_handlers.mic_toggle_event_handler import MicToggleEventHandler
 from event_handlers.mute_mic_event_handler import MuteMicEventHandler
 from event_handlers.open_meet_event_handler import OpenMeetEventHandler
@@ -56,6 +57,7 @@ def register_handlers(
         ChatToggleEventHandler(stream_deck_client, browser_manager),
         HandToggleEventHandler(stream_deck_client, browser_manager),
         LeaveCallEventHandler(stream_deck_client, browser_manager),
+        StopPresentingScreenEventHandler(stream_deck_client, browser_manager),
         MicToggleEventHandler(stream_deck_client, browser_manager),
         MuteMicEventHandler(stream_deck_client, browser_manager),
         OpenMeetEventHandler(stream_deck_client, browser_manager),
